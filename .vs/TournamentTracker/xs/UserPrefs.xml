@@ -1,15 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="TrackerLibrary/Class1.cs">
-    <Files>
-      <File FileName="TrackerLibrary/Class1.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TournamentTracker" expanded="True">
-            <Node name="TrackerLibrary" expanded="True">
-              <Node name="Class1.cs" selected="True" />
-            </Node>
+            <Node name="TrackerLibrary" expanded="True" />
           </Node>
         </State>
       </Pad>
