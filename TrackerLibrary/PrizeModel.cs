@@ -1,5 +1,4 @@
-﻿using System;
-namespace TrackerLibrary
+﻿namespace TrackerLibrary
 {
     /// <summary>
     /// Class that instantiates a Prize 

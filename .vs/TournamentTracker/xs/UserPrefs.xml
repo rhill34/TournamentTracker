@@ -1,26 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="TrackerLibrary/MatchupEntryModel.cs">
-    <Files>
-      <File FileName="TrackerLibrary/TeamModel.cs" Line="7" Column="36" />
-      <File FileName="TrackerLibrary/PersonModel.cs" Line="5" Column="42" />
-      <File FileName="TrackerLibrary/TournamentModel.cs" Line="25" Column="23" />
-      <File FileName="TrackerLibrary/MatchupModel.cs" Line="14" Column="30" />
-      <File FileName="TrackerLibrary/PrizeModel.cs" Line="25" Column="59" />
-      <File FileName="TrackerLibrary/MatchupEntryModel.cs" Line="5" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TournamentTracker" expanded="True">
             <Node name="TrackerLibrary" expanded="True">
-              <Node name="MatchupEntryModel.cs" selected="True" />
+              <Node name="TournamentModel.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.TrackerLibrary FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
