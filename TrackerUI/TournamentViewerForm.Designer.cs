@@ -35,6 +35,14 @@
             this.roundDropDown = new System.Windows.Forms.ComboBox();
             this.unplayedOnlyCheckbox = new System.Windows.Forms.CheckBox();
             this.matchupListBox = new System.Windows.Forms.ListBox();
+            this.teamOneName = new System.Windows.Forms.Label();
+            this.teamOneScoreLabel = new System.Windows.Forms.Label();
+            this.teamOneScoreText = new System.Windows.Forms.TextBox();
+            this.teamTwoName = new System.Windows.Forms.Label();
+            this.teamTwoScoreLabel = new System.Windows.Forms.Label();
+            this.teamTwoScoreText = new System.Windows.Forms.TextBox();
+            this.versusLabel = new System.Windows.Forms.Label();
+            this.scoreButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Header
@@ -76,7 +84,7 @@
             this.roundDropDown.FormattingEnabled = true;
             this.roundDropDown.Location = new System.Drawing.Point(267, 229);
             this.roundDropDown.Name = "roundDropDown";
-            this.roundDropDown.Size = new System.Drawing.Size(654, 60);
+            this.roundDropDown.Size = new System.Drawing.Size(598, 60);
             this.roundDropDown.TabIndex = 2;
             // 
             // unplayedOnlyCheckbox
@@ -100,15 +108,107 @@
             this.matchupListBox.ItemHeight = 52;
             this.matchupListBox.Location = new System.Drawing.Point(84, 413);
             this.matchupListBox.Name = "matchupListBox";
-            this.matchupListBox.Size = new System.Drawing.Size(837, 418);
+            this.matchupListBox.Size = new System.Drawing.Size(781, 418);
             this.matchupListBox.TabIndex = 4;
+            // 
+            // teamOneName
+            // 
+            this.teamOneName.AutoSize = true;
+            this.teamOneName.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teamOneName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.teamOneName.Location = new System.Drawing.Point(923, 413);
+            this.teamOneName.Name = "teamOneName";
+            this.teamOneName.Size = new System.Drawing.Size(345, 63);
+            this.teamOneName.TabIndex = 1;
+            this.teamOneName.Text = "<team one>";
+            // 
+            // teamOneScoreLabel
+            // 
+            this.teamOneScoreLabel.AutoSize = true;
+            this.teamOneScoreLabel.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teamOneScoreLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.teamOneScoreLabel.Location = new System.Drawing.Point(923, 506);
+            this.teamOneScoreLabel.Name = "teamOneScoreLabel";
+            this.teamOneScoreLabel.Size = new System.Drawing.Size(172, 63);
+            this.teamOneScoreLabel.TabIndex = 1;
+            this.teamOneScoreLabel.Text = "Score";
+            // 
+            // teamOneScoreText
+            // 
+            this.teamOneScoreText.Location = new System.Drawing.Point(1101, 509);
+            this.teamOneScoreText.Name = "teamOneScoreText";
+            this.teamOneScoreText.Size = new System.Drawing.Size(255, 60);
+            this.teamOneScoreText.TabIndex = 5;
+            // 
+            // teamTwoName
+            // 
+            this.teamTwoName.AutoSize = true;
+            this.teamTwoName.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teamTwoName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.teamTwoName.Location = new System.Drawing.Point(923, 675);
+            this.teamTwoName.Name = "teamTwoName";
+            this.teamTwoName.Size = new System.Drawing.Size(341, 63);
+            this.teamTwoName.TabIndex = 1;
+            this.teamTwoName.Text = "<team two>";
+            // 
+            // teamTwoScoreLabel
+            // 
+            this.teamTwoScoreLabel.AutoSize = true;
+            this.teamTwoScoreLabel.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teamTwoScoreLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.teamTwoScoreLabel.Location = new System.Drawing.Point(923, 768);
+            this.teamTwoScoreLabel.Name = "teamTwoScoreLabel";
+            this.teamTwoScoreLabel.Size = new System.Drawing.Size(172, 63);
+            this.teamTwoScoreLabel.TabIndex = 1;
+            this.teamTwoScoreLabel.Text = "Score";
+            // 
+            // teamTwoScoreText
+            // 
+            this.teamTwoScoreText.Location = new System.Drawing.Point(1101, 771);
+            this.teamTwoScoreText.Name = "teamTwoScoreText";
+            this.teamTwoScoreText.Size = new System.Drawing.Size(255, 60);
+            this.teamTwoScoreText.TabIndex = 5;
+            // 
+            // versusLabel
+            // 
+            this.versusLabel.AutoSize = true;
+            this.versusLabel.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.versusLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.versusLabel.Location = new System.Drawing.Point(1066, 598);
+            this.versusLabel.Name = "versusLabel";
+            this.versusLabel.Size = new System.Drawing.Size(156, 63);
+            this.versusLabel.TabIndex = 1;
+            this.versusLabel.Text = "- VS -";
+            // 
+            // scoreButton
+            // 
+            this.scoreButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.scoreButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.scoreButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.scoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scoreButton.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.scoreButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.scoreButton.Location = new System.Drawing.Point(1385, 598);
+            this.scoreButton.Name = "scoreButton";
+            this.scoreButton.Size = new System.Drawing.Size(254, 125);
+            this.scoreButton.TabIndex = 6;
+            this.scoreButton.Text = "Score";
+            this.scoreButton.UseVisualStyleBackColor = true;
             // 
             // TournamentViewerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(25F, 52F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1538, 900);
+            this.ClientSize = new System.Drawing.Size(1680, 900);
+            this.Controls.Add(this.scoreButton);
+            this.Controls.Add(this.teamTwoScoreText);
+            this.Controls.Add(this.teamTwoScoreLabel);
+            this.Controls.Add(this.teamOneScoreText);
+            this.Controls.Add(this.teamTwoName);
+            this.Controls.Add(this.teamOneScoreLabel);
+            this.Controls.Add(this.versusLabel);
+            this.Controls.Add(this.teamOneName);
             this.Controls.Add(this.matchupListBox);
             this.Controls.Add(this.unplayedOnlyCheckbox);
             this.Controls.Add(this.roundDropDown);
@@ -134,6 +234,14 @@
         private System.Windows.Forms.ComboBox roundDropDown;
         private System.Windows.Forms.CheckBox unplayedOnlyCheckbox;
         private System.Windows.Forms.ListBox matchupListBox;
+        private System.Windows.Forms.Label teamOneName;
+        private System.Windows.Forms.Label teamOneScoreLabel;
+        private System.Windows.Forms.TextBox teamOneScoreText;
+        private System.Windows.Forms.Label teamTwoName;
+        private System.Windows.Forms.Label teamTwoScoreLabel;
+        private System.Windows.Forms.TextBox teamTwoScoreText;
+        private System.Windows.Forms.Label versusLabel;
+        private System.Windows.Forms.Button scoreButton;
     }
 }
 
