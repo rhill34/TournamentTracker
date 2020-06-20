@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TournamentViewerForm));
-            this.Header = new System.Windows.Forms.Label();
+            this.HeaderLabel = new System.Windows.Forms.Label();
             this.TournamentName = new System.Windows.Forms.Label();
-            this.roundLabel = new System.Windows.Forms.Label();
-            this.roundDropDown = new System.Windows.Forms.ComboBox();
             this.unplayedOnlyCheckbox = new System.Windows.Forms.CheckBox();
             this.matchupListBox = new System.Windows.Forms.ListBox();
             this.teamOneName = new System.Windows.Forms.Label();
@@ -43,19 +41,21 @@
             this.teamTwoScoreText = new System.Windows.Forms.TextBox();
             this.versusLabel = new System.Windows.Forms.Label();
             this.scoreButton = new System.Windows.Forms.Button();
+            this.roundDropDown = new System.Windows.Forms.ComboBox();
+            this.roundLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Header
+            // HeaderLabel
             // 
-            this.Header.AutoSize = true;
-            this.Header.Font = new System.Drawing.Font("Century Gothic", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.Header.Location = new System.Drawing.Point(59, 82);
-            this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(510, 89);
-            this.Header.TabIndex = 0;
-            this.Header.Text = "Tournament :";
-            this.Header.Click += new System.EventHandler(this.Header_Click);
+            this.HeaderLabel.AutoSize = true;
+            this.HeaderLabel.Font = new System.Drawing.Font("Century Gothic", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.HeaderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.HeaderLabel.Location = new System.Drawing.Point(59, 82);
+            this.HeaderLabel.Name = "HeaderLabel";
+            this.HeaderLabel.Size = new System.Drawing.Size(510, 89);
+            this.HeaderLabel.TabIndex = 0;
+            this.HeaderLabel.Text = "Tournament :";
+            this.HeaderLabel.Click += new System.EventHandler(this.Header_Click);
             // 
             // TournamentName
             // 
@@ -67,25 +67,6 @@
             this.TournamentName.Size = new System.Drawing.Size(318, 90);
             this.TournamentName.TabIndex = 0;
             this.TournamentName.Text = "<none>";
-            // 
-            // roundLabel
-            // 
-            this.roundLabel.AutoSize = true;
-            this.roundLabel.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.roundLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.roundLabel.Location = new System.Drawing.Point(67, 226);
-            this.roundLabel.Name = "roundLabel";
-            this.roundLabel.Size = new System.Drawing.Size(194, 63);
-            this.roundLabel.TabIndex = 1;
-            this.roundLabel.Text = "Round";
-            // 
-            // roundDropDown
-            // 
-            this.roundDropDown.FormattingEnabled = true;
-            this.roundDropDown.Location = new System.Drawing.Point(267, 229);
-            this.roundDropDown.Name = "roundDropDown";
-            this.roundDropDown.Size = new System.Drawing.Size(598, 60);
-            this.roundDropDown.TabIndex = 2;
             // 
             // unplayedOnlyCheckbox
             // 
@@ -195,6 +176,25 @@
             this.scoreButton.Text = "Score";
             this.scoreButton.UseVisualStyleBackColor = true;
             // 
+            // roundDropDown
+            // 
+            this.roundDropDown.FormattingEnabled = true;
+            this.roundDropDown.Location = new System.Drawing.Point(267, 229);
+            this.roundDropDown.Name = "roundDropDown";
+            this.roundDropDown.Size = new System.Drawing.Size(598, 60);
+            this.roundDropDown.TabIndex = 2;
+            // 
+            // roundLabel
+            // 
+            this.roundLabel.AutoSize = true;
+            this.roundLabel.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roundLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.roundLabel.Location = new System.Drawing.Point(67, 226);
+            this.roundLabel.Name = "roundLabel";
+            this.roundLabel.Size = new System.Drawing.Size(194, 63);
+            this.roundLabel.TabIndex = 1;
+            this.roundLabel.Text = "Round";
+            // 
             // TournamentViewerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(25F, 52F);
@@ -214,7 +214,7 @@
             this.Controls.Add(this.roundDropDown);
             this.Controls.Add(this.roundLabel);
             this.Controls.Add(this.TournamentName);
-            this.Controls.Add(this.Header);
+            this.Controls.Add(this.HeaderLabel);
             this.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -228,10 +228,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Header;
+        private System.Windows.Forms.Label HeaderLabel;
         private System.Windows.Forms.Label TournamentName;
-        private System.Windows.Forms.Label roundLabel;
-        private System.Windows.Forms.ComboBox roundDropDown;
         private System.Windows.Forms.CheckBox unplayedOnlyCheckbox;
         private System.Windows.Forms.ListBox matchupListBox;
         private System.Windows.Forms.Label teamOneName;
@@ -242,6 +240,8 @@
         private System.Windows.Forms.TextBox teamTwoScoreText;
         private System.Windows.Forms.Label versusLabel;
         private System.Windows.Forms.Button scoreButton;
+        private System.Windows.Forms.ComboBox roundDropDown;
+        private System.Windows.Forms.Label roundLabel;
     }
 }
 
