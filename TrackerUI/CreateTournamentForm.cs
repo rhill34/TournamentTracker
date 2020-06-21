@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TrackerUI
 {
@@ -13,6 +7,11 @@ namespace TrackerUI
         public CreateTournamentForm()
         {
             InitializeComponent();
+        }
+
+        private void tournamentPlayersLabel_Click(object sender, System.EventArgs e)
+        {
+
         }
     }
 }
